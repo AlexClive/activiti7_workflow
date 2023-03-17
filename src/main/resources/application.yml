@@ -1,1 +1,18 @@
+server:
+  port: 8010
+  servlet:
+    context-path: /
+
+spring:
+  datasource:
+    username: root
+    password: Zxr1234!@#$
+    url: jdbc:mysql://localhost:3306/activiti-date?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true&amp;useSSL=false&amp;serverTimezone=UTC
+    driver-class-name: org.mariadb.jdbc.Driver
+  #Activiti7 历史表创建
+  activiti:
+    db-history-used: true
+    history-level: full
+    # 自动部署
+    check-process-definitions: false
 
